@@ -3,7 +3,9 @@ font-family: Geneva, Tahoma, Verdana, sans-serif;
 }
 
 a:link{text-decoration: none; }
-a.button{  box-shadow: 0 2px 4px 0 #CECECE; 
+a.button{  -webkit-box-shadow: 0 2px 4px 0 #CECECE; 
+  -moz-box-shadow: 0 2px 4px 0 #CECECE; 
+  box-shadow: 0 4px 4px 0 #CECECE;
   text-decoration: none;
 }
 a.button:hover{
@@ -18,7 +20,11 @@ a.button:hover{
     color: black;  
     margin-right: 15px;
     margin-top: 15px;
+
     text-decoration: none;
+      -moz-box-shadow: 0 2px 4px 0 #CECECE; 
+
+  -webkit-box-shadow: 0 4px 4px 0 #CECECE;
   box-shadow: 0 4px 4px 0 #CECECE;
 }
 
