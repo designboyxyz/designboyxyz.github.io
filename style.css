@@ -1,27 +1,50 @@
+body {
+font-family: Geneva, Tahoma, Verdana, sans-serif;
+}
+
+a:link{text-decoration: none; }
+a.button{  box-shadow: 0 2px 4px 0 #CECECE; 
+  text-decoration: none;
+}
+a.button:hover{
+ background-color: #E6F7FF;
+    border-radius: 30px;
+    width: 102%;
+    line-height: 12px;
+    border: 4px solid #BFE9FF;
+    text-align: center;
+    vertical-align: center;
+    padding:10px; 
+    color: black;  
+    margin-right: 15px;
+    margin-top: 15px;
+    text-decoration: none;
+  box-shadow: 0 4px 4px 0 #CECECE;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+
 .avi {
   border: 2px solid #ddd;
   border-radius: 4px;
   padding: 5px;
   width: 95px;
   border-radius: 50%;
-  border-color: #b3b3b3;
+  box-shadow: 0 1px 3px 0 #CECECE;
 
   background-color: #fff;
-}
-
-.img-center{
-margin: 0px auto;
-padding-left: 25px;
-}
-
-body {
-font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
 }
 
 .carousel-control-prev-icon,
