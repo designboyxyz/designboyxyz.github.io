@@ -4,14 +4,13 @@ font-family: Geneva, Tahoma, Verdana, sans-serif;
 
 a:link{text-decoration: none; }
 a.button{  
-  box-shadow: 0 2px 4px 0 #CECECE;
   -webkit-box-shadow: 0 2px 4px 0 #CECECE; 
   -moz-box-shadow: 0 2px 4px 0 #CECECE; 
- 
+  box-shadow: 0 2px 4px 0 #CECECE;
   text-decoration: none;
 }
 a.button:hover{
- background-color: #E6F7FF;
+  background-color: #E6F7FF;
     border-radius: 30px;
     width: 102%;
     line-height: 12px;
