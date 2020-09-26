@@ -69,9 +69,18 @@ img.button2:hover{
     width: 100%;
   }
   .avi{
-   max-height: 60px;
-   max-width: 75px;
+   max-height: 75px;
+     border-radius: 0px;
+padding: 4px;
+   max-width: 65px;
    margin-right: 0px;
+  }
+
+  .appicon{
+max-height: 40px;
+margin-top: 20px;
+padding: 0px;
+
   }
   .homecard{
     max-width: 220px;
