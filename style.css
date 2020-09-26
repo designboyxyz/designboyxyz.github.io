@@ -64,9 +64,14 @@ img.button2:hover{
     width: 100%;
   }
   .avi{
-    width:45px;
-    height:45px;
+   max-height: 75px;
+   max-width: 75px;
+   margin-right: 0px;
   }
+
+  .homecard{max-width: 225px;}
+
+  .cardtitle{font-size: 22px;}
 }
 
 
