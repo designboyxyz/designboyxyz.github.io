@@ -8,6 +8,11 @@ background-color: transparent;
 border-color: transparent;
 }
 
+.buttonrow{
+
+
+}
+
 
 
 a:link{text-decoration: none; }
@@ -59,7 +64,7 @@ img.button2:hover{
 
 
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 375px){
   .column {
     width: 100%;
   }
@@ -68,11 +73,20 @@ img.button2:hover{
    max-width: 75px;
    margin-right: 0px;
   }
-
-  .homecard{max-width: 225px;}
-
+  .homecard{
+    max-width: 220px;
+  }
   .cardtitle{font-size: 22px;}
+  .buttonrow{max-width: 200px;
+    width: 100%;
+    padding-left: 0px;
+    margin-left: 0px;}
+    .clipbutton{visibility: hidden;}
 }
+
+
+
+
 
 
 
