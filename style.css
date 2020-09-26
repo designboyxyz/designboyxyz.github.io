@@ -63,6 +63,10 @@ img.button2:hover{
   .column {
     width: 100%;
   }
+  .avi{
+    width:45px;
+    height:45px;
+  }
 }
 
 
