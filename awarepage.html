@@ -150,7 +150,8 @@ height: 30px;">
 							-moz-box-shadow: 0 1px 2px 0 #CECECE; 
 		    					-webkit-box-shadow: 0 1px 2px 0 #CECECE;
 		    					box-shadow: 0 1px 2px 0 #CECECE;
-								"><i>aware</i> is an android-based application to help u.s. air force commanders keep track of soldier health metrics in real-time.
+								">
+								<i>aware</i> is an android-based application to help u.s. air force commanders keep track of soldier health metrics in real-time.
 							</div>
 
 						</div>
@@ -162,7 +163,7 @@ height: 30px;">
 		<!-- note/card -->
 		<div class=" col-12 col-sm-12 col-md-12  col-lg-12 col-xl-12">
 		<!--box for purpose statement-->
-			<div class="cardhead" id="card_head" style="
+			<div class="cardhead"  style="
 			
 				margin: 0px;
 				width:100% ;  
@@ -174,7 +175,7 @@ height: 30px;">
 				background-color: #EBEBEB;
 				border-top-left-radius: 30px;
 				border-top-right-radius: 30px;">
-	  			<h4 style="font-family: Raleway; opacity: .7" class="card-title">purpose</h4>
+	  			<h4 id="cardhead" style="font-family: Raleway; opacity: .7" class="card-title">purpose</h4>
 	  		</div>
 
 			<div class=" " style="
@@ -190,7 +191,7 @@ height: 30px;">
 				  	<p style="
 				  	opacity: .7;
 				  	font-size: 18px;
-				  	" class ="card-text">commanders need to monitor airmen vitals so they can give personalized training and keep track of unit and individual performance in combat scenarios.
+				  	" id="cardtext" class ="card-text">commanders need to monitor airmen vitals so they can give personalized training and keep track of unit and individual performance in combat scenarios.
 				  	<br/>
 				  	
 				  
@@ -202,36 +203,39 @@ height: 30px;">
 						padding-right: 40px;
 				  	" class="row buttonrow">
 
-				  		<div class="col-0 col-xl-8"></div>
+				  		<div class="col-9 col-sm-9 col-md-8 col-lg-9 col-xl-10"></div>
 
-				  			<div class=" buttonrowbutton "style="
+
+
+
+						<div class=" buttonrowbutton "style="
 				  		margin-right: 10px;
 				  		border-radius: 30px;
 				  		"
-				  		class="button2 col-1 col-sm-1 col-md-1  col-lg-1 " 
-				  		id="purposebtn" onclick='changeText()'>
-				  			<a class="" style="
+				  		class="button col-1 col-sm-1 col-md-1  col-lg-1 " 
+				  		  onclick='showPurpose()'>
+				  			<a  id="purposebtn" class="" style="
 				  			height: 30px;
 	  						width: 30px;
 	 						background-color: #FCFCFC;
-	  						border: 2px solid #EBEBEB;
+	  						border: 1px solid #EBEBEB;
 							border-radius: 50%;
 	  						display: inline-block;
-	  						-moz-box-shadow: 0 1px 2px 0 #CECECE; 
-	    					-webkit-box-shadow: 0 1px 2px 0 #CECECE;
-	    					box-shadow: 0 1px 2px 0 #CECECE;
+	  						-moz-box-shadow: 0 2px 4px 0 #CECECE; 
+	    					-webkit-box-shadow: 0 2px 4px 0 #CECECE;
+	    					box-shadow: 0 2px 4px 0 #CECECE;
 	  						"></a>
 				  		</div> 
 				  		
 				  		<div class=" buttonrowbutton " style="
-				  		margin-right: 10px;"
+				  		margin-right: 10px;" 
 				  		class="button col-1 col-sm-1 col-md-1  col-lg-1 " 
-				  		id="functionsbtn" onclick='changeText()'>
-				  			<a class="" style="
+				  		onclick='showFunctions()'>
+				  			<a id="functionsbtn" class="" style="
 				  			height: 30px;
 	  						width: 30px;
-	 						background-color: #FCFCFC;
-	  						border: 2px solid #EBEBEB;
+	 						background-color: #F8F8F8;
+	  						border: 3px solid #F8F8F8;
 							border-radius: 50%;
 	  						display: inline-block;
 	  						-moz-box-shadow: 0 1px 2px 0 #CECECE; 
@@ -240,23 +244,7 @@ height: 30px;">
 	  						"></a>
 				  		</div>
 
-				  		<div class=" buttonrowbutton " class=" col-1 col-sm-1 col-md-1  col-lg-1"
-				  		id="toolsusedbtn">
-				  			<div style="
-				  			height: 30px;
-	  						width: 30px;
-	 						background-color: #FCFCFC;
-	  						border: 2px solid #EBEBEB;
-							border-radius: 50%;
-	  						display: inline-block;
-	  						-moz-box-shadow: 0 1px 2px 0 #CECECE; 
-	    					-webkit-box-shadow: 0 1px 2px 0 #CECECE;
-	    					box-shadow: 0 1px 2px 0 #CECECE;
-	  						"></div>
-
-
-				  		</div>
-
+				  		
 				  	</div>
 			</div>
 			<br/>
@@ -382,21 +370,50 @@ class="page-footer font-small white">
 </div><!--main container (no header)-->
 
 
+<script>
+function showFunctions()
+{
+ document.getElementById('cardhead').innerHTML = 'functions';
+ document.getElementById('cardtext').innerHTML = 'this app has the ability to read a signal from any bluetooth heartrate sensor and show it on the screen. it can pair up to three devices. heartrate variation is visualized in real-time through a reading—this reading also changes color relative to their body-mass index. sessions can be visualized in the app or exported as a .css file.';
+ document.getElementById("functionsbtn").style.backgroundColor = "#FCFCFC";
+ document.getElementById("functionsbtn").style.borderColor = "#FCFCFC";
+ document.getElementById("functionsbtn").style.boxShadow = "0px 2px 4px #CECECE";
+document.getElementById("purposebtn").style.boxShadow = "0px 1px 2px #CECECE";
+ document.getElementById("purposebtn").style.backgroundColor = "#F8F8F8";
+  document.getElementById("purposebtn").style.borderColor = "#F8F8F8";
+
+
+ //document.getElementById("myDIV").style.boxShadow = "10px 20px 30px blue"; 
+}
+
+function showPurpose(){
+document.getElementById('cardhead').innerHTML = 'purpose';
+ document.getElementById('cardtext').innerHTML = 'commanders need to monitor airmen vitals so they can give personalized training and keep track of unit and individual performance in combat scenarios.';
+  document.getElementById("purposebtn").style.backgroundColor = "#FCFCFC";
+ document.getElementById("purposebtn").style.borderColor = "#FCFCFC";
+
+document.getElementById("purposebtn").style.boxShadow = "0px 2px 4px #CECECE";
+ document.getElementById("functionsbtn").style.boxShadow = "0px 1px 2px #CECECE";
+document.getElementById("functionsbtn").style.backgroundColor = "#F8F8F8";
+document.getElementById("functionsbtn").style.borderColor = "#F8F8F8";
+
+
+}
+
+
+
+
+
+</script>
+
+
+</body>
 
 	
 
 
 </body>
 
-<script>
-function changeText()
-{
- document.getElementById('cardhead').innerHTML = 'functions';
-}
-</script>
-
-
-</body>
 
 
 
