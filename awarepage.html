@@ -202,10 +202,15 @@ height: 30px;">
 						padding-right: 40px;
 				  	" class="row buttonrow">
 
-				  		<div style="
-				  		margin-right: 10px;"
-				  		class=" col-1 col-sm-1 col-md-1  col-lg-1">
-				  			<div style="
+				  		<div class="col-0 col-xl-8"></div>
+
+				  			<div class=" buttonrowbutton "style="
+				  		margin-right: 10px;
+				  		border-radius: 30px;
+				  		"
+				  		class="button2 col-1 col-sm-1 col-md-1  col-lg-1 " 
+				  		id="purposebtn" onclick='changeText()'>
+				  			<a class="" style="
 				  			height: 30px;
 	  						width: 30px;
 	 						background-color: #FCFCFC;
@@ -215,12 +220,14 @@ height: 30px;">
 	  						-moz-box-shadow: 0 1px 2px 0 #CECECE; 
 	    					-webkit-box-shadow: 0 1px 2px 0 #CECECE;
 	    					box-shadow: 0 1px 2px 0 #CECECE;
-	  						"></div>  
-				  		</div>
-				  		<div style="
+	  						"></a>
+				  		</div> 
+				  		
+				  		<div class=" buttonrowbutton " style="
 				  		margin-right: 10px;"
-				  		class=" col-1 col-sm-1 col-md-1  col-lg-1">
-				  			<div style="
+				  		class="button col-1 col-sm-1 col-md-1  col-lg-1 " 
+				  		id="functionsbtn" onclick='changeText()'>
+				  			<a class="" style="
 				  			height: 30px;
 	  						width: 30px;
 	 						background-color: #FCFCFC;
@@ -230,10 +237,11 @@ height: 30px;">
 	  						-moz-box-shadow: 0 1px 2px 0 #CECECE; 
 	    					-webkit-box-shadow: 0 1px 2px 0 #CECECE;
 	    					box-shadow: 0 1px 2px 0 #CECECE;
-	  						"></div>
+	  						"></a>
 				  		</div>
 
-				  		<div class=" col-1 col-sm-1 col-md-1  col-lg-1">
+				  		<div class=" buttonrowbutton " class=" col-1 col-sm-1 col-md-1  col-lg-1"
+				  		id="toolsusedbtn">
 				  			<div style="
 				  			height: 30px;
 	  						width: 30px;
@@ -380,7 +388,15 @@ class="page-footer font-small white">
 
 </body>
 
+<script>
+function changeText()
+{
+ document.getElementById('cardhead').innerHTML = 'functions';
+}
+</script>
 
+
+</body>
 
 
 
