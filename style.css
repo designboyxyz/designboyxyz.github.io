@@ -77,8 +77,10 @@ padding: 4px;
    max-width: 75px;
    margin-right: 0px;
   }
-.pointlessbtn{width: 10px;}
 
+.pointlessbtn{visibility: hidden;}
+
+.emptyclass{max-width: 0px;}
 
   .appicon{
 max-height: 60px;
