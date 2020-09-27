@@ -9,7 +9,7 @@ border-color: transparent;
 }
 
 .buttonrow{
-
+align-items: flex-end;
 
 }
 
@@ -41,11 +41,11 @@ a.button:hover{
     box-shadow: 0 4px 4px 0 #CECECE;
 }
 
-img.button2{
+.button2{
               transition-duration: .2s;
 
 }
-img.button2:hover{
+.button2:hover{
        -moz-box-shadow: 0 4px 4px 0 #CECECE; 
     -webkit-box-shadow: 0 4px 4px 0 #CECECE;
     box-shadow: 0 4px 4px 0 #CECECE;
@@ -62,7 +62,9 @@ img.button2:hover{
 }
 
 
-
+@media only screen and (min-width: 1400px){
+  .buttonrowbutton{margin-right: 0px;}
+}
 
 @media only screen and (max-width: 365px){
   .column {
@@ -90,7 +92,7 @@ padding: 0px;
   .buttonrow{max-width: 160px;
     width: 100%;
     padding-right: 0px;
-    margin-left: 40px;
+    margin-left: 100px;
     margin-right: 0px;}
   .clipbutton{visibility: hidden;}
 
