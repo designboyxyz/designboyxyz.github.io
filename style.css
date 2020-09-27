@@ -134,13 +134,13 @@ max-width: 120px;}
 {
   content: ' ►';
   font-size: 25px;
-  color: red;
+  color: #6F6F6F;
   font-style: normal;
 }
 
 .carousel-control-prev-icon:after {
   content: '◄ ';
   font-size: 25px;
-  color: red;
+  color: #6F6F6F;
   font-style: normal;
 }
