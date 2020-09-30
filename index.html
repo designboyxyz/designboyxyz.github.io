@@ -350,24 +350,34 @@ font-family: Geneva, Tahoma, Verdana, sans-serif;
 
 	<script> 
 
+alert(window.innerWidth);
 		shiftForm();
 
 		function shiftForm(){if(window.innerWidth<1200){
 			document.getElementById("mc_embed_signup").style.marginLeft="125px";}
 			else{
 document.getElementById("mc_embed_signup").style.marginLeft="30px";
-			}
+			
 
-if(window.innerWidth<400){
-document.getElementById("mc_embed_signup").style.maxWidth="200px";}
+if(window.innerWidth<416){
+document.getElementById("mc_embed_signup").style.maxWidth="180px";
 
-if(window.innerWidth<400){
-document.getElementById("mce-EMAIL").style.maxWidth="150px";}
-
-		}
-if(window.innerWidth<400){
+document.getElementById("mce-EMAIL").style.maxWidth="150px";
+		
 document.getElementById("mce-FNAME").style.maxWidth="150px";
 		}
+
+	}
+
+	if(window.innerWidth<400){
+		document.getElementById("mc_embed_signup").style.marginLeft="105px";
+document.getElementById("mc_embed_signup").style.marginRight="20px";
+document.getElementById("mce-EMAIL").style.maxWidth="130px";
+		
+document.getElementById("mce-FNAME").style.maxWidth="130px";
+		}
+
+	}
 
 		
 
