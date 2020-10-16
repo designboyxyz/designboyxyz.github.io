@@ -134,7 +134,8 @@ a.button:hover{
 
 .flipbook-viewport .container{
   position:absolute;
-  top:50%;
+  /*top:50%;*/
+  padding-top: 50px;
   left:50%;
   margin:auto;
 }
@@ -201,6 +202,14 @@ a.button:hover{
     visibility: visible;
   }
 }
+
+
+
+
+
+
+
+
 
 
 
