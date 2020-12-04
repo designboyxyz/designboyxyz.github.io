@@ -2,6 +2,62 @@ body {
 font-family: Geneva, Tahoma, Verdana, sans-serif;
 }
 
+input.placeholder{
+    color:red;
+}
+
+.imageGridItem {
+ height: 135px;
+width: 135px;
+
+ background-color: red;
+}
+.imageGridItem:hover {
+ height: 135px;
+width: 135px;
+ background-color: red;
+     -moz-box-shadow: 0 2px 2px 0 #CECECE; 
+    -webkit-box-shadow: 0 2px 2px 0 #CECECE;
+    box-shadow: 0 2px 2px 0 #CECECE;
+}
+
+.tag{
+
+}
+.tag:hover{
+  color: blue;
+  text-decoration: underline;
+}
+
+
+.contentItem{
+  background-color: #FCFFAF;
+    border-radius: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    padding-left: 30px;
+    padding-right:30px;
+      -webkit-box-shadow: 0 2px 4px 0 #CECECE; 
+  -moz-box-shadow: 0 2px 4px 0 #CECECE; 
+  box-shadow: 0 2px 4px 0 #CECECE;
+  text-decoration: none;
+   margin: 20px;
+   margin-bottom: 10px;
+  margin-top: 0px;
+  width: 450px;
+font-family: Geneva, Tahoma, Verdana, sans-serif;
+
+}
+.contentItem:hover{
+    background-color: #FCFFAF;
+s   text-decoration: none;
+    -moz-box-shadow: 0 4px 4px 0 #CECECE; 
+    -webkit-box-shadow: 0 4px 4px 0 #CECECE;
+    box-shadow: 0 4px 4px 0 #CECECE;
+}
+
+
 .list-group-item{
 
 background-color: transparent;
@@ -19,6 +75,15 @@ align-items: flex-end;
   box-shadow: 0 2px 4px 0 #CECECE;
   text-decoration: none;
 }
+
+.productcard{
+ -webkit-box-shadow: 0 2px 4px 0 #CECECE; 
+  -moz-box-shadow: 0 2px 4px 0 #CECECE; 
+  box-shadow: 0 2px 4px 0 #CECECE;
+  text-decoration: none;
+}
+
+
 .artcard:hover{
     text-decoration: none;
     background: red;
@@ -238,6 +303,7 @@ a.button:hover{
     margin-top: 20px;
     padding: 0px;
   }
+
 
   .homecard{
     max-width: 220px;
