@@ -626,7 +626,108 @@ const products = [
 	}).join('')}`;//end map call
 	}
 	//funtion for services click
-	function showServices(){}
+	function showServices(){document.getElementById('search-input').value = '';
+	document.getElementById("test").innerHTML=`
+
+	${products.map(function(product){
+		if(product.category=="service"){
+		return`
+		<div class="row" style="
+
+					align-items: center;
+					justify-content: center;
+					margin-bottom: 20px;
+		">
+		<div class="col-10  col-md-4 col-lg-4
+		" >  
+			<div class="productcard" style="
+			background-color: #FCFCFC;
+			min-height: 200px;
+						
+
+			border-radius: 30px;
+			min-width: 300px;
+			
+			"
+			
+			 >	
+			 	<div class="column">
+				 	<!--image preview-->
+				 	<div style="
+					background-image: url(${product.image});
+					background-size: 300px;
+					background-position: top;
+				 	min-height: 300px;
+				 	border-top-left-radius: 30px;
+				 	border-top-right-radius: 30px;
+				 	"></div>
+			 	<div class="row">
+				 	<div class="column col-8">
+					 	<!--title-->
+					 	<div style="
+					 	min-height: 50px
+					 	border-bottom-right-radius: 30px;
+					 	border-bottom-left-radius: 30px;
+					 	padding: 20px;
+					 	padding-top:10px;
+					 	padding-bottom: 5px;
+					 	font-size: 22px;
+					 	line-height:90%;
+					 	color: rgba(0,0,0,.5)">
+					 		${product.title}
+					 	</div>
+					 	<!--subtitle-->
+					 	<div style="
+					 	border-bottom-right-radius: 30px;
+					 	border-bottom-left-radius: 30px;
+					 	padding: 20px;
+					 	padding-top: 1px;
+					 	line-height: 90%;
+					 	padding-bottom: 15px;
+					 	font-size: 14px;
+					 	color: rgba(0,0,0,.5)">
+					 		${product.subtitle}
+					 	</div>
+				 	</div>
+				 
+				 	<div class="column col-3">
+					 	<div 
+					 	
+					 	style="
+					 	font-size: 24px;
+					 	padding-top: 10px;
+					 	align-items: right;
+					 	opacity: 65%;
+					 	margin-bottom: 5px;"
+					 	id="item_price
+					 	">
+						 $${product.price}
+						</div>
+						<a class="button " href="${product.link}"
+						style="
+						background-color: #E2F6FF;
+						border-radius: 30px;
+						
+						max-width: 250px;
+						height: 30px;
+						line-height: 12px;
+						border: 4px solid #CEEEFF;
+						text-align: center;
+						color: rgba(0,0,0,.5);	
+						padding: 5px;
+						margin-top: 10px;
+						text-decoration: none;
+						transition-duration: .2s;">
+						view</a>					
+					</div>
+				</div>
+				 </div>
+	    	</div>
+		</div>
+		</div>
+
+		`}
+	}).join('')}`;}
 	//function for books click
 	function showBooks(){}
 
