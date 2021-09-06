@@ -5,8 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animations.css">
-<link rel="icon" type="image/png" href="pin.png"/>
+  <link rel="stylesheet" href="animations.css">
+  <link rel="icon" type="image/png" href="pin.png"/>
+
+<meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -16,6 +18,8 @@
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700" rel="stylesheet">
   <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="css3-animate-it.js">
+</script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link
     rel="stylesheet"
@@ -24,473 +28,325 @@
 
 
 </head>
+ 
+<body style="
 
-
-
-<!--<nav class="navbar navbar"
-style="  
+margin-top: 40%;
 ">
-  <div class="container-fluid" style="
-    
 
 
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="modalImg" 
+  style="width: 80%;
+  ">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- main container -->
+<div class="container-fluid"
+style="
+height: 90vh;
+margin-top: 25px;
+margin-right: 35px;
+margin-left: 35px;
+margin-bottom: 30px;
+
+
+">
+  <div class="container-fluid"
+    style="margin: 0px;
+    height: 100%;
+    padding: 0px;
     ">
-    <div 
-      class="navbar-header"
-
-    >
-
-
-    
-
-    </div>
-
-
-    
-
-
-
-    <ul class="nav navbar-nav navbar-right"style="
-      font-size: 21px;  
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300;
-              align-items: center;
-
-      margin-right: 30px;">
-      <li class="active"><a href="#"></a></li>
-      <li><a href="#">Portfolio</a></li>
-     
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </div>
-</nav>-->
-
-<body>
-
-
-
-
-
-
-
-
-<div class="container " 
-style="padding-bottom: 45px;
-padding-right: 30px;
-  
-
-
-  ">
-
- <div class="row "
- style="position: relative;
-  ">
-
-<div class="col-sm-12a col-md-12 animatedParent animateOnce" style="
-  align-items: center;
-
-
-  ">
-    <p 
-      style="   
-        font-size: 46px; 
-        font-family: 'Archivo', sans-serif; 
-        font-weight: 1000;
-        text-align: center;
-        padding-top: 15%;
-
-        ">
-          hi, i'm designboyXYZ. 
-
-            <img class="animate__animated animate__bounceInDown" src="pin.png" style=" 
-        width: 75px;
-        padding-bottom: 10px;
-
-               
-">
-    </p> 
-    <p class="animated fadeIn"
-      style="
-      font-size: 21px;  
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300;
-      text-align: center;">
-        i design interfaces, graphics 
-      and experiences. 
-
-
-
-    </p>
-    <br/>
- 
-<!--
-    <div class="main" style="
-    display: flex;
-  justify-content: center;
-  align-items: center;">
-      <button class="button">Learn More</button>
-    </div>
--->
-
-    <br/>
-    <br/>
-</div>
-
-<!--
-
-<div class="col-xs-12 col-sm-6 col-md-6 "
-    style="" 
-      >
-    <img src="main_pic.jpg"    
-    style="  
-      top: 50%;
-      left: 50%;
-      width: 100%;
-      height: auto;
-    " >
-  </div>
--->
-</div>
-
-
-
-</div>
- 
-
-
-
-
-<!-- how i can help SETION -->
-
-<div class="container-fluid" 
-style="background: black;
-display: block;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-  padding-bottom: 90px;
-">
-
-<div class="container"
-style="position: relative;
-max-width: 750px; ">
-  <p style="font-size: 24px; opacity: .65; 
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300;"><br/>i can help you...</p>
-  <div class="row" style="margin-left:10% ; margin-right:10% ;">
-    <!--1-->
-    <div class="col-xs-12 col-sm-6 animatedParent animateOnce" style="">
-      <h3 class="animated fadeInDownShort slowest">create remarkable<br/> user experiences</h3>
-      <p class="animated fadeIn slowest"style="font-size: 18px;  
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300;">
-        i help companies create objects
-        that leave a lasting impression
-        and shape lives.</p>
-        <br/>
-      
-    </div> 
-  
-    <div class="col-xs-12 col-sm-6 animatedParent animateOnce">
-      <h3 class="animated fadeInDownShort slowest">reach into the core<br/>
-      of your product</h3>
-      <p class="animated fadeIn slowest" style="font-size: 18px;  
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300;">cut through the clutter
-        and strive for simplicity&#8212;
-        let's create what we want and solve our problems
-        in the most effective way possible.
-       </p>
-     
-    </div> 
-  </div> 
- 
-
-
-
-
-
-  
-
-<!--
-<div class="row">
-   3
-    <div class="col-sm-6">
-      <h3>reach into the core of your product</h3>
-      <p style="font-size: 18px;">cut through the clutter
-        and strive for simplicity.<br/>
-        let's create a product that solves problems<br/>
-        in the most effective way possible.
-       </p>
-      
-    </div> 
-    <!--4
-    <div class="col-sm-6">
-      <h3>reach into the core of your product</h3>
-      <p>i am good at</p>
-    </div>
-</div>-->
-
-
-</div>
-
-</div>
-
-<!--examples container-->
-
-
-<div class="container"
-style="padding-bottom: 90px;
-max-width: 750px; ">
- <p style="font-size: 24px; opacity: .65; 
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300;
-
- color:black; opacity: .65;"><br/>some of my work...</p>
-<br/>
-
- <div class="row" style="
- ">
-    <!--1-->
-    <div class="col-xs-3 col-sm-4 animatedParent animateOnce"
-    style="">
-     <img class="animated fadeInLeft"src="aware_1.png"
-     style="width: 100%;
-     min-width: 120px;
-     max-width: 200px;
-     padding-right: 25px;
-     margin-top:10px; 
-     vertical-align: center;
-
-     ">
-    </div> 
-  
-    <div class="col-xs-8 col-sm-8 animatedParent animateOnce" style="  vertical-align: center; padding-bottom: 35px; height: 100%; padding-left: 45px;" 
-    >
-      <h3 class="animated fadeInRight">a heart-rate<br/>
-        monitoring android app<br/>
-      for the air force</h3>
-      <p class="animated fadeInRight slower"style="font-size: 18px;  margin-right: 10px;
-      margin-left: 10px;
-
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300;">a simple and effective tool<br/>
-        for monitoring airmen during training.<br/>
-       <a href="app_example.html">learn more ⟶</a><br/>
-       </p>
-    </div> 
-
-
-</div>
-
-
-
-<div class="row" style="display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  
- ">
-    <!--2-->
-    
-  
-    <div class="col-xs-8 col-sm-6 animatedParent animateOnce" style="padding-top:7%; padding-bottom: 10%; height: 100%; 
-     text-align: right;
-     " 
-    >
-      <h3 class="animated fadeInLeft">a design-forward <br/>tea brand
-      </h3>
-      <p class="animated fadeInLeft slower" style="font-size: 18px;  
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300; margin-left:10px; margin-right: 10px; ">traditional ingredients<br/>
-        carefully blended by master teamakers.<br/>
-           <a href="product_example.html">learn more ⟶</a><br/>
-       </p>
-    </div> 
-
-    <div class="col-xs-4 col-sm-6 animatedParent animateOnce"
-    style="display: flex;
-  justify-content: center;
-  align-items: center;
-  ">
-     <img class="animated fadeInRight"src="tea.png"
-     style="margin-top:10px; width:100%; max-width: 200px;  
-   
-     ">
-    </div> 
-
-</div>
-
-<div class="row" style="
- ">
- <br/>
-    <!--1-->
-    <div class="col-xs-12 col-sm-12 animatedParent animateOnce"
-    style="
-  display: flex;
-  justify-content: center;
-  align-items: center;
-    ">
-     <img class="animated fadeInDown slow"src="card1.png"
-     style="width: 100%;
-     max-width: 300px;
-     margin-top:10px; 
-     vertical-align: center;
-
-     ">
-    </div> 
-  
-    <div class="col-xs-12 col-sm-12 animatedParent animateOnce" style="  vertical-align: center; padding-bottom: 35px; height: 100%; text-align: center;" 
-    >
-    <br/>
-      <h3 class="animated fadeInDown slower">gift card illustrations 
-        designed to boost <br/>
-      brand-product association</h3>
-      <p class="animated fadeInUp slower"style="font-size: 18px;  
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300;">using colorful illustrations to boost<br/>
-        gift card sales and department-specific spending.<br/>
-       <a href="illustration_example.html">learn more ⟶</a><br/>
-       </p>
-    </div> 
-
-
-</div>
-
-
-
-</div>
-
-
-<!-- my skillset section --> 
-
-
-<div class="container-fluid" 
-style="background: black;
-display: block;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-  padding-bottom: 90px;
-">
-
-<div class="container"
-style="position: relative;
-max-width: 750px; ">
-  <p style="font-size: 24px; opacity: .65; 
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300; opacity: .65;"><br/>my skillset...</p>
-  <div class="row" style="margin-left:10% ; margin-right:10% ;">
-    <!--1-->
-    <div class="col-xs-12 col-sm-6 animatedParent animateOnce" style="">
-      <h3 class="animated fadeInDownShort">adobe creative suite<br/></h3>
-      <p class="animated fadeIn slower" style="font-size: 18px;  
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300;">
-        adobe xd, illustrator<br/>
-        indesign, photoshop, <br/>
-        and premiere.</p>
-
-      <h3 class="animated fadeInDownShort">other  tools<br/></h3>
-      <p class="animated fadeIn slower" style="font-size: 18px;  
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300;">
-        figma, adobe fresco,<br/>
-        google analytics, <br/>
-        paper and pen.</p> 
-      
-    </div> 
-  
-    <div class="col-xs-12 col-sm-6 animatedParent animateOnce">
-      <h3 class="animated fadeInDownShort">coding<br/>
-      </h3>
-      <p class="animated fadeIn slower" style="font-size: 18px;  
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300;">html, css, js<br/>
-        r, sas, matlab,<br/>
-        java, c++, and python.
-       </p>
-
-       <h3 class="animated fadeInDownShort">other  skills<br/></h3>
-      <p class="animated fadeIn slower" style="font-size: 18px;  
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300;">
-        writing, illustration,<br/>
-        sound design, video editing,<br/>
-        and public speaking.</p> 
-     
-    </div> 
-  </div> 
- </div>
-</div>
-
-<!-- footer -->
-
-<div class="container" 
-  style="position: relative;
-  margin-bottom: 90px;
-  margin-top: 20px;
-  max-width: 750px; ">
-<p style="font-size: 24px; opacity: .65; 
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300;
- color:black; opacity: .65;"><br/>stay in touch...</p>
-
- <div class="row" 
-    style="
-    margin-left:10%; 
-    margin-right:10%;
-   ">
-
-
-  <div class="col-xs-12 col-sm-6 animatedParent animateOnce" style="">
-        <h3>contact me<br/></h3>
-        <p  class="animated fadeIn slower" style="font-size: 18px;  
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300;">
-          email:<br/>
-          designboyxyz@gmail.com</p>
-
+    <div class="row">
+
+
+      <!-- left panel -->
+      <div id="panel" class="col-xs-12 col-sm-4 col-lg-3 col-xl-3"
+              
+             >
+
+              <!-- avi -->
+              <div class="avi" style="
+
+              "> 
+                <img src="avi.png"  class="avi_img" style="
+                display: block;
+                margin-left: auto;
+                margin-right: auto;">
+              </div>
+
+
+
+
+              <!-- bio -->
+              <div class="bio" style="
+              text-align: center;
+             "> 
+                <div style="font-size: 28px; padding-top: 10px;">designboyXYZ</div>
+                <div style="
+                padding-left: 10px;
+                padding-right: 10px;
+                "><br/>designboyXYZ is a pakistani-american  multi-media artist based in the san francisco bay area. </div>
+              </div>
+
+               <!-- social icons -->
+
+              <div class="buttondiv" style="
+              padding: 0px;
+              
+              "> 
+                <div class="container-fluid socialbuttons"
+                style="margin-bottom: 0px;
+                padding-top: 0px;
+                align-content: center;
+                
+                ">
+                  <div class="row" style="">
+                    <div class="col-xs-4" style="
+                    min-height: 40px;">
+                      <a href="http://twitter.com/designboyxyz">
+                        <img src="twitter.png"  width="30px" height="30px" style="
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;">
+                      </a>
+                    </div>
+                    <div class="col-xs-4" style="
+                    min-height: 40px;">
+                      <a href="http://instagram.com/designboyxyz">
+                         <img src="ig.png"  width="30px" height="30px" style="
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;">
+                      </a>
+                    </div>
+                    <div class="col-xs-4" style="
+                    min-height: 40px;">
+                      <a href="mailto: designboyxyz@gmail.com">
+                        <img src="mailicon.png"  width="30px" height="30px" style="
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;">
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
         
+      </div>
+
+      <!-- image grid container for big screens-->
+      <div class="col-xs-12 col-sm-8 col-lg-8 screendisplay" 
+        style="background-color: white;
+        margin-bottom: 25px;
         
-  </div> 
+               height: 100%;
 
- <div class="col-xs-12 col-sm-6 animatedParent animateOnce" >
-        <h3>social<br/></h3>
-        <p class="animated fadeIn slower"
-        style="font-size: 18px;  
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300;">
-          twitter, ig, clubhouse:<br/>
-          @designboyxyz</p>
-        
-  </div> 
+            
+              ">
+
+              <!-- image grid -->
+              <div class="container-fluid" style="margin-left: auto;
+              margin-right: auto;
+                  ">
+                <div class="row" style="
+                  width: inherit;
+                ">
+                  <div class="col-xs-3 imageholder">
+                    <div class="square" id="img1"
+                      style="background-image: url('img1.png');">
+                    </div>
+
+                   
+
+                  </div>
+
+                  <div class="col-xs-3 imageholder">
+                    <div class="square" id="img2"
+                        style="background-image: url('img2.png')">
+                    </div>
+                  </div>
+
+                  <div class="col-xs-3 imageholder">
+                    <div class="square" id="img3"
+                        style="background-image: url('img3.png')">
+                    </div>
+                  </div>
+
+                   <div class="col-xs-3 imageholder">
+                    <div class="square" id="img4"
+                        style="background-image: url('img4.png')">
+                    </div>
+                  </div>
+              </div>
+
+              <!-- row 2 -->
+              <div class="row" style="
+                  align-content: center;">
+                  <div class="col-xs-3 imageholder">
+                    <div class="square" id="img5"
+                      style="background-image: url('img5.png');">
+                    </div>
+                  </div>
+
+                  <div class="col-xs-3 imageholder">
+                    <div class="square" id="img6"
+                        style="background-image: url('img6.png')">
+                    </div>
+                  </div>
+
+                  <div class="col-xs-3 imageholder">
+                    <div class="square" id="img7"
+                        style="background-image: url('img7.png')">
+                    </div>
+                  </div>
+
+                   <div class="col-xs-3 imageholder">
+                    <div class="square" id="img8"
+                        style="background-image: url('img8.png')">
+                    </div>
+                  </div>
+              </div>
 
 
+              <!-- row 3 -->
+              <div class="row" style=" 
+                  align-content: center;">
+                  <div class="col-xs-3 imageholder">
+                    <div class="square" id="img9"
+                      style="background-image: url('img9.png');">
+                    </div>
+                  </div>
+
+                  <div class="col-xs-3 imageholder">
+                    <div class="square" id="img10"
+                        style="background-image: url('img10.png')">
+                    </div>
+                  </div>
+
+                  <div class="col-xs-3 imageholder">
+                    <div class="square" id="img11"
+                        style="background-image: url('img11.png')">
+                    </div>
+                  </div>
+
+                   <div class="col-xs-3 imageholder">
+                    <div class="square" id="img12"
+                        style="background-image: url('img12.png')">
+                    </div>
+                  </div>
+              </div>
+
+
+
+      </div>  
+
+
+
+                    
+
+
+
+
+
+
+      </div>
+
+  
+    </div>
   </div>
-</div> 
-
-
-<!-- last box -->
-<div class="container-fluid" 
-style="background: black;
-display: block;
-  margin-left: auto;
-
-  margin-right: auto;
-  color: white;
-  size: 24px;
-  height: 100px;
-  display: flex;
-    justify-content: center;
-    align-items: center;
-">
-
-© designboyXYZ, 2021.
 </div>
 
-<script type="text/javascript" src="css3-animate-it.js">
-</script>
+
+
+
+
+
+
 
 </body>
+
+
+
+
+<script type="text/javascript">
+  
+
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var modalImg = document.getElementById("modalImg");
+
+var img1 = document.getElementById("img1");
+var img4 = document.getElementById("img4");
+
+img1.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "img1_full.jpg";}
+img2.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "img2_full.jpg";}
+img3.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "img3_full.png";}
+img4.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "img4_full.jpg";}
+img5.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "img5_full.jpg";}
+img6.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "img6_full.jpg";}
+img7.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "img7_full.jpg";}
+img8.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "img8_full.jpg";}
+img9.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "img9_full.jpg";}
+img10.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "img10_full.jpg";}
+img11.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "img11_full.jpg";}
+img12.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "img12_full.jpg";}
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+
+
 </html>
