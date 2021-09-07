@@ -256,6 +256,8 @@ body {
 .buttondiv{margin-top: -75px;
               margin-bottom: -30px;}
 
+              .screendisplay{ margin-bottom: 20px;}
+
 }
 
 @media screen and (max-width:  1200px){
@@ -282,6 +284,8 @@ body{
 	.socialbuttons{
 
 		padding-top: 0px;}
+
+
 }
 
 
@@ -309,6 +313,8 @@ body{
 	}
 
 	.bio {height:  30%;}
+
+	.screendisplay{ margin-bottom: 12.5px;}
 
 
 
