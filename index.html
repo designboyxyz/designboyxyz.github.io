@@ -51,13 +51,13 @@ margin-top: 40%;
 </div>
 
 
+<span style="font-size:30px;cursor:pointer;margin-left: 15px;" onclick="openNav()"> &#9776; </span>
 
-
-
-
-
-
-
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="essays.html" style="margin-left: 15px;">essays</a>
+  
+</div>
 
 <!-- main container -->
 <div class="container-fluid"
@@ -70,6 +70,8 @@ margin-bottom: 30px;
 
 
 ">
+
+
   <div class="container-fluid"
     style="margin: 0px;
     height: 100%;
@@ -343,6 +345,17 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
+}
+</script>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
 }
 </script>
 
