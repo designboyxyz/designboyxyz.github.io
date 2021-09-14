@@ -143,6 +143,11 @@ body {
 		width: 120px;
 		height: 120px;	}
 
+.essaytitle{ padding-left: 75px;}
+
+.essaykeywords{
+	padding-left: 75px;
+}
 
 	.bio {min-height:  175px;
 		margin-top: 30%;}
@@ -320,6 +325,18 @@ body{
 	margin-right: 0%;
 }
 
+.essaytitle{
+	font-size: 18px;
+	padding-left: 35px;
+}
+
+.essaydesc{
+	padding-left: 35px;
+}
+
+.essaykeywords{
+	padding-left: 35px;
+}
 
 	.avi {
 	margin-left: auto;
