@@ -133,6 +133,8 @@ body {
     width: 1560px;
 	}
 
+	.essaytitle{font-size: 28px;}
+
 
 	.avi {
 	min-height: 100px;
@@ -177,6 +179,8 @@ body {
 	}
 
 	.bio{margin-top: 30%;}
+
+	.essaydesc{margin-left: 75px;}
 
 	.socialbuttons {padding-top: 10%;
 		margin-right: 0%; 
@@ -331,7 +335,7 @@ body{
 }
 
 .essaydesc{
-	padding-left: 35px;
+	margin-left: 35px;
 }
 
 .essaykeywords{
