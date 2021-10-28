@@ -133,6 +133,11 @@ body {
     width: 1560px;
 	}
 
+	.pdf_box{
+	 min-height: 1260px;
+
+}
+
 	.essaytitle{font-size: 28px;}
 
 
@@ -205,6 +210,11 @@ body {
 
 	}
 
+	.pdf_box{
+	 min-height: 840px;
+
+}
+
 .essaytext{margin-left: 20%;
     margin-right: 20%;}
 
@@ -232,6 +242,8 @@ body {
 @media screen and (max-width: 1024px) {
 	#panel { margin-right: 0%; }
 
+
+
 }
 
 
@@ -240,6 +252,8 @@ body {
 	body {
 		padding-top: 0px;
 	    background-color: white;}
+
+	    
 
 	.avi {
 	margin-left: auto;
@@ -291,10 +305,20 @@ body {
 
 #panel { margin-right: 0%; }
 
+.pdf_box{
+	 min-height: 800px;
+
+}
+
 }
 
 @media screen and (max-width: 600px) {
 body{
+}
+
+.pdf_box{
+	 min-height: 600px;
+
 }
 
 .bio{margin-right: 20%;
@@ -315,6 +339,13 @@ body{
 
 
 @media screen and (max-width: 480px) {
+
+
+	.pdf_box{
+	 min-height: 420px;
+
+}
+
 
 	body {
 		background-color: white;
@@ -378,12 +409,24 @@ body{
 
 }
 
+@media screen and (max-width: 380px) {
+
+	.pdf_box{
+	 min-height: 300px;
+
+}
+
+}
+
+
 @media screen and (max-width: 325px) {
 .avi {
 	
 	margin-top: 5%;
 
 	}
+
+
 
 	.bio{margin-bottom: 25px;}
 
