@@ -342,7 +342,7 @@ body{
 
 
 	.pdf_box{
-	 min-height: 420px;
+	 visibility: hidden;
 
 }
 
@@ -412,7 +412,7 @@ body{
 @media screen and (max-width: 380px) {
 
 	.pdf_box{
-	 min-height: 300px;
+	 visibility: hidden;
 
 }
 
