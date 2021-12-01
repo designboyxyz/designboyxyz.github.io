@@ -29,9 +29,23 @@
 <body>
 
 
+<a style="font-size:30px;cursor:pointer;margin-left: 15px;" href="portfolio.html"> &#60; </a>
+
+
+<span style="font-size:30px; cursor:pointer; margin-right: 15px; float: right;" onclick="openNav()"> &#9776; </span> 
 
 
 
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <a href="portfolio.html" style="margin-left: 15px;">&#128205; main page</a>
+  <a href="media.html" style="margin-left: 15px;">&#128506; media</a>
+  <a href="uxdesign.html" style="margin-left: 15px;">&#129405; ux design</a>
+  <a href="uxdesign.html" style="margin-left: 15px;">my resume</a>
+  <a href="portfolio.html#contact" style="margin-left: 15px;">contact</a>
+</div>
+<!---->
 
 
 
@@ -64,8 +78,9 @@ padding-right: 30px;
         padding-bottom: 10px;
         ">
 
-        good design entails discipline, refining technical materials, and finding new ways to assemble them to communicate an idea or sensation. 
-
+          <img class="animate__animated animate__bounceInDown" src="map.png" style=" 
+            width: 75px;
+            padding-bottom: 10px;">
           
     </p> 
 
@@ -458,6 +473,24 @@ display: block;
 
 <script type="text/javascript" src="css3-animate-it.js">
 </script>
+
+
+
+
+
+<script>
+  
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";}
+
+</script>
+
+
+
+
 
 </body>
 </html>
